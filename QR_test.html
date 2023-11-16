@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random URL Redirect</title>
+</head>
+<body>
+
+<script>
+  // Array of 10 URLs
+  const urls = [
+    'https://naver.com/1',
+    'https://google.com/2',
+    'https://daum.net/3',
+  ];
+
+  // Function to generate a random index
+  function getRandomIndex(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  // Get a random URL
+  const randomIndex = getRandomIndex(urls.length);
+  const randomURL = urls[randomIndex];
+
+  // Redirect to the random URL
+  window.location.href = randomURL;
+</script>
+
+</body>
+</html>
